@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Intro */
+
+/* Container */
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* Header and image */
+
+.rose-bg {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -2;
+}
+
+.foliage {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	z-index: -1;
+}
+
+.flower-icon {
+	position: relative;
+	top: 170px;
+	left: -80px;
+}
+
+.right-flower {
+	position: relative;
+	float: right;
+	top: -300px;
+	z-index: -1;
+}
+
+@media screen and (max-width: 840px) {
+	.right-flower {
+		display: none;
+	}
+}
+
+.header {
+	width: 100%;
+	max-width: 800px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0 120px;
+}
+
+@media screen and (max-width: 1130px) {
+	.intro {
+		margin-left: 30px;
+	}
+}
+
+.logtype-with-text-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	position: relative;
+	z-index: 100;
+	margin-right: 10px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.name-of-logo {
+	margin-top: 0;
+	color: #211833;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+/* Nav */
+
+.nav {
+	width: 100%;
+	max-width: 457px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px auto;
+	padding-top: 18px;
+}
+
+.nav-link {
+	color: #263a41;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;
+	margin-right: 10px;
+}
+
+.nav-link:after {
+	content: '';
+	display: block;
+	opacity: 0;
+	height: 2px;
+	width: 100%;
+	background-color: #ffd210;
+	position: absolute;
+	top: 17px;
+	transition: all 0.2s ease-in-out;
+	transform: translateY(7px);
+}
+
+.nav-link:hover:after {
+	opacity: 1;
+	cursor: pointer;
+	transform: translateY(0); 
+}
+
+/* Intro-text-and-button */
+
+.intro-text-and-button {
+	width: 100%;
+	max-width: 545px;
+}
+
+.sup-title-of-h1 {
+	font-size: 15px;
+	color: #ff817e;
+	font-family: 'Rufina', serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.title-of-intro {
+	margin: 10px 0 30px;
+	font-size: 60px;
+	font-family: 'Rufina', serif;
+	font-weight: 700;
+	color: #1e2528;
+}
+
+.sub-title-of-h1 {
+	font-size: 15px;
+	color: #555;
+	margin-bottom: 50px;
+}
+
+.reserve {
+	display: inline-block;
+	width: 100%;
+	max-width: 170px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500;
+	background-color: #ff817e;
+	text-decoration: none;
+	padding: 15px 30px;
+	margin-right: 100px;
+}
+
+.arrow-icon {
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.watch {
+	align-self: flex-end;
+	display: inline-block;
+	color: #555;
+	font-size: 15px;
+	text-decoration: none;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.play-icon {
+	position: absolute;
+	top: 0;
+	left: -50px;
+}
+
+.bg-of-play {
+	position: absolute;
+	top: -17px;
+	left: -68px;
+	z-index: -2;
+}
+
+/* About-company-section-of-intro */
+
+.about-company {
+	width: 100%;
+	max-width: 870px;
+	margin: 175px auto 0;
+	text-align: center;
+}
+
+.sup-title-of-h2 {
+	font-size: 20px;
+	color: #888;
+	text-transform: uppercase;
+}
+
+.heading-2 {
+	font-size: 42px;
+	color: #1e2528;
+	font-weight: 700;
+	font-family: 'Rufina', serif;
+	margin: 0 0 15px;
+}
+
+.sub-title-of-h2 {
+	font-size: 15px;
+	color: #888;
+	font-weight: 300;
+	margin-bottom: 65px;
+}
+
+.read-more {
+	text-decoration: none;
+	color: #fff;
+	padding: 13px 45px;
+	background-color: #ff817e;
+	border-radius: 30px;
+}
+
+/* Photos */
+
+.photos {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	margin-bottom: 140px;
+}
+
+.photo:not(:last-of-type) {
+	margin: 0 5px 0 0;
+}
+
+.photo:last-of-type {
+	margin: 0;
+}
+
+.photo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #eb7a77;
+	height: 575px;
+	flex-grow: 1;
+	width: 25%;
+}
+
+.photo img {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+.figcaption {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Rufina', serif;
+	text-transform: capitalize;
+}
