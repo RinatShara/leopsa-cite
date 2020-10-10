@@ -6,6 +6,10 @@ body {
 
 /* Intro */
 
+.intro {
+	margin-bottom: 165px;
+}
+
 /* Container */
 
 .container {
@@ -43,7 +47,7 @@ body {
 	z-index: -1;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 900px) {
 	.right-flower {
 		display: none;
 	}
@@ -236,6 +240,7 @@ body {
 	padding: 13px 45px;
 	background-color: #ff817e;
 	border-radius: 30px;
+	text-align: center;
 }
 
 /* Photos */
