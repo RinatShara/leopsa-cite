@@ -16,6 +16,8 @@ body {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 /* Header and image */
@@ -60,12 +62,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 0 120px;
-}
-
-@media screen and (max-width: 1130px) {
-	.intro {
-		margin-left: 30px;
-	}
 }
 
 .logtype-with-text-bottom {
@@ -283,4 +279,158 @@ body {
 	font-weight: 700;
 	font-family: 'Rufina', serif;
 	text-transform: capitalize;
+}
+
+/* Popular procedures */
+
+.text-procedures {
+	width: 100%;
+	max-width: 670px;
+	text-align: center;
+	margin: 0 auto 90px;
+}
+
+.title-of-section {
+	font-family: 'Rufina', serif;
+	font-size: 42px;
+	font-weight: 700;
+	color: #263a41;
+	text-transform: capitalize;
+}
+
+.about-procedures {
+	font-size: 15px;
+	color: #888;
+	font-weight: 300;
+}
+
+/* Procedures */ 
+
+.procedures {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 200px;
+}
+
+.procedure {
+	box-sizing: border-box;
+	text-align: center;
+	border: 1px solid lightgray;
+	margin-right: 30px;
+	width: 33%;
+	max-width: 360px;
+	padding: 20px;
+	transition: all 0.1s ease-in-out;
+}
+
+.procedure:hover{
+	box-shadow: 0 0 40px 5px rgba(4, 10, 50, 0.1);
+	border: none;
+}
+
+.procedure:last-child {
+	margin-right: 0;
+}
+
+.photo-of-procedure {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.name-of-therapy {
+	font-family: 'Rufina', serif;
+	font-size: 22px;
+	font-weight: 700;
+	color: #263a41;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.description-of-therapy {
+	font-weight: 300;
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 40px;
+}
+
+.button-about-therapy {
+	display: block;
+	max-width: 143px;
+	padding: 15px 5px;
+	margin: 0 auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	background-color: #30383b;
+	border-radius: 22px;
+	transition: all 0.1s ease-in-out;
+}
+
+.button-about-therapy:hover {
+	background: #ff817e;
+}
+
+/* Reviews */
+
+.reviews {
+	width: 100%;
+	background-color: #fff9f8;
+	margin-bottom: 80px;
+}
+
+.reviews-inner {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+	padding-top: 75px;
+	text-align: center;
+}
+
+.quotes {
+	margin-bottom: 30px;
+}
+
+.review {
+	font-family: 'Rufina', serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #263a41;
+	margin-bottom: 50px;
+}
+
+.name-of-author {
+	font-family: 'Rufina', serif;
+	font-weight: 400;
+	font-size: 22px;
+	color: #263a41;
+	padding-bottom: 65px;
+}
+
+.executive {
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.slider {
+	display: flex;
+	max-width: 85px;
+	margin: 0 auto; justify-content: space-between;
+}
+
+.slide {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background-color: #ffc3c2;
+	transition: all 0.1s ease-in-out;
+	margin-bottom: 195px;
+}
+
+.slide:hover {
+	cursor: pointer;
+	background-color: #ff817e;
 }

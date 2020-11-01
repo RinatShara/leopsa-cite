@@ -7,7 +7,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;400;500&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="intro">
+
+	<section class="intro">
 		<img class='foliage' src="https://i.postimg.cc/HnJZb0cM/foliage-icon.png">
 		<div class="container">
 			<img class='rose-bg' src="https://i.postimg.cc/FRCCfCRm/rose-bg.png">
@@ -18,8 +19,8 @@
 				</div>
 				<nav class='nav'>
 					<a class='nav-link' href="#">Home</a>
-					<a class='nav-link' href="#">About</a>
-					<a class='nav-link' href="#">Feature</a>
+					<a class='nav-link' href="#about">About</a>
+					<a class='nav-link' href="#feature">Feature</a>
 					<a class='nav-link' href="#">Service</a>
 					<a class='nav-link' href="#">Contact</a>
 				</nav>
@@ -36,7 +37,7 @@
 				</a>
 			</div>
 			<img class="flower-icon" src="https://i.postimg.cc/RVNL1xdk/flower-icon.png">
-			<div class="about-company logtype-with-text-bottom">
+			<div id='about' class="about-company logtype-with-text-bottom">
 				<img class="logotype" src="https://i.postimg.cc/SNJHn5Ms/logotype.png">
 				<p class="sup-title-of-h2">About our spa center</p>
 				<h2 class='heading-2'>Come and you will be Inspired!</h2>
@@ -47,8 +48,9 @@
 			</div>
 			<img class='right-flower' src="https://i.postimg.cc/htFrr3fp/right-flower-icon.png">
 		</div>
-	</div>
-	<section class="photos">
+	</section>
+
+	<section id='feature' class="photos">
 		<figure class="photo">
 			<img src='https://i.postimg.cc/bwf6vqS9/therapy.png'>
 			<p class='figcaption'>Massage</p>
@@ -62,6 +64,50 @@
 			<img src='https://i.postimg.cc/qvnv8xRd/swimming.png'>
 			<p class='figcaption'>Swimming</p>
 		</figure>
+	</section>
+
+	<section class="popular-procedures">
+		<div class="container">
+			<div class="text-procedures">
+				<h2 class="title-of-section">Popular procedures</h2>
+				<p class="about-procedures">To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
+			</div>
+			<div class="procedures">
+				<div class="procedure">
+					<img class='photo-of-procedure' src='https://i.postimg.cc/BbLC1gYq/BG.png'>
+					<h2 class='name-of-therapy'>Massage therapy</h2>
+					<p class='description-of-therapy'>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+					<a href="#" class="button-about-therapy">Read more</a>
+				</div>
+				<div class="procedure">
+					<img class='photo-of-procedure' src='https://i.postimg.cc/BbLC1gYq/BG.png'>
+					<h2 class='name-of-therapy'>Beauty care</h2>
+					<p class='description-of-therapy'>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+					<a href="#" class="button-about-therapy">Read more</a>
+				</div>
+				<div class="procedure">
+					<img class='photo-of-procedure' src='https://i.postimg.cc/BbLC1gYq/BG.png'>
+					<h2 class='name-of-therapy'>Executive reflexology</h2>
+					<p class='description-of-therapy'>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters firmament place which.</p>
+					<a href="#" class="button-about-therapy">Read more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="reviews-inner">
+			<img class="quotes" src="https://i.postimg.cc/Hnq90yRb/quote.png">
+			<p class="review">First i beast be fruitful open you tree all Won't can't likeness and you're have whales creature seed to two grass life blessed you meat shall you winged under from their there he That you're one called gather make much red wherein set fourth green bearing fifth replenish given she had.</p>
+			<img class="photo-of-author" src="https://i.postimg.cc/tRs05G8g/Bitmap.png">
+			<p class="name-of-author">Jack Marsh, <span class='executive'>Executive</span></p>
+			<div class="slider">
+				<div class="slide"></div>
+				<div class="slide"></div>
+				<div class="slide"></div>
+				<div class="slide"></div>
+			</div>
+		</div>
 	</section>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
